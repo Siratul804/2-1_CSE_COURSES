@@ -31,7 +31,7 @@ int main() {
 
    int n,key;
    
-   cout << "Enter the array value: " << endl;
+   cout << "Enter the array value: " << endl; // Must be sorted
    cin >> n;
    
    int arr[n];
