@@ -1,13 +1,17 @@
 # 2nd year 1st semester CSE Courses
 
-## C++
+## [C++](c++)
 
 #### DSA Basic Sorting :
 
-- [Bubble Sort](c++)
+- Bubble Sort
 - Selection Sort
 - Insertion Sort
+- Binary Search
+- Liner Search
+- Implosion Search
 
  Resouce  => https://youtu.be/1jCFUv-Xlqo?si=jNpNJbVr2lNtop6G 
 
-## Java
+## [Java](java)
+- Import Packages
