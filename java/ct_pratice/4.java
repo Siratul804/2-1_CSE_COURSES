@@ -1,12 +1,12 @@
-public class Training {
-    private String title;
-    private String instructor;
-    private int capacity;
-    private int enrolledStudentCount;
-    private String cardKey; // Private String variable (for Q3)
+ class Training {
+     String title;
+     String instructor;
+     int capacity;
+     int enrolledStudentCount;
+     String cardKey; // Private String variable (for Q3)
 
     // Constructor to initialize attributes
-    public Training(String title, String instructor, int capacity) {
+     Training(String title, String instructor, int capacity) {
         this.title = title;
         this.instructor = instructor;
         this.capacity = capacity;
@@ -14,7 +14,7 @@ public class Training {
     }
 
     // Method to register students
-    public void registerStudents(int studentCount) {
+     void registerStudents(int studentCount) {
         if (enrolledStudentCount + studentCount > capacity) {
             enrolledStudentCount = capacity; // If over capacity, set to max
         } else {
@@ -23,17 +23,17 @@ public class Training {
     }
 
     // Method to update instructor
-    public void updateInstructor(String newInstructor) {
+     void updateInstructor(String newInstructor) {
         this.instructor = newInstructor;
     }
 
     // Method to get student count
-    public int getStudentCount() {
+     int getStudentCount() {
         return enrolledStudentCount;
     }
 
     // Method to display training details
-    public void display() {
+     void display() {
         System.out.println("\nTraining Title: " + title);
         System.out.println("Instructor: " + instructor);
         System.out.println("Capacity: " + capacity);
