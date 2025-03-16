@@ -10,9 +10,12 @@ public class ArrayOperations {
 
         
         Arrays.sort(numbers);
+        
+        double average = Arrays.stream(numbers).average().orElse(0);
 
         System.out.println("Array: " + Arrays.toString(numbers));
 
+        System.out.println("Average: " + average);
         
         System.out.println("Smallest number: " + numbers[0]);
         System.out.println("Second smallest number: " + numbers[1]);
