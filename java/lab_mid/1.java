@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class BloodDonorSystem {
-    static class Donor {
+    class Donor {
         int id;
         String name;
         int age;
@@ -30,7 +30,7 @@ class BloodDonorSystem {
     }
 
     ArrayList<Donor> donors = new ArrayList<>();
-    int nextId = 1;
+    int nextId = 0;
     Scanner input = new Scanner(System.in);
 
     void addDonor() {
@@ -45,8 +45,8 @@ class BloodDonorSystem {
         System.out.print("Blood Group: ");
         String bg = input.nextLine();
 
-        donors.add(new Donor(nextId++, name, age, weight, bg));
-        System.out.println("Donor added with ID " + (nextId - 1));
+        donors.add(new Donor(++nextId, name, age, weight, bg));
+        System.out.println("Donor added with ID " + nextId );
     }
 
     Donor findDonor(int id) {
