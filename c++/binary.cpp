@@ -14,8 +14,8 @@ int BinarySearch(int arr[], int n, int key ) {
         } else if (key > arr[mid]) {
             beg = mid + 1;
         } else {
-            loc = mid + 1;
-            cout << "found at position " << loc << endl;
+            loc = mid;
+            cout << "found at index " << loc << endl;
             
             return loc;
         }

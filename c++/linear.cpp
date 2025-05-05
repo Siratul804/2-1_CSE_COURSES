@@ -1,37 +1,27 @@
-#include <iostream>  // Include input-output library
+#include <iostream>
 using namespace std;
 
 int main() {
-    int n, key, loc = -1;  // 'n' for size, 'key' for search value, 'loc' stores found index
+    int key, loc = -1; 
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Enter the number of elements: ";
-    cin >> n;  // Take array size input
-
-    int arr[n];  // Declare an array of size 'n'
-
-    // Taking array input from the user
-    cout << "Enter " << n << " elements: ";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];  // Store elements in the array
-    }
-
+    cout << "Array: {10, 20, 30, 40, 50}" << endl;
     cout << "Enter the value to search: ";
-    cin >> key;  // Take the key to search
+    cin >> key;  
 
-    // Linear Search Algorithm
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == key) {  // Check if current element matches the key
-            loc = i + 1;  // Store position (1-based index)
-            break;  // Stop searching after finding the key
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == key) {  
+            loc = i; 
+            break; 
         }
     }
 
-    // Output the result
     if (loc != -1) {
-        cout << "Item found at position: " << loc << endl;
+        cout << "Item found at index: " << loc << endl;
     } else {
-        cout << "Item is not in the list" << endl;
+        cout << "Item is not in the list." << endl;
     }
 
-    return 0;  // Indicate successful program execution
+    return 0; 
 }
