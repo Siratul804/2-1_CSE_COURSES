@@ -6,17 +6,11 @@ import java.io.IOException;
 
 public class FileOperation {
     public static void main(String[] args) {
-        String[] veg = { "alu", "potol", "begun", "tometo" };
-
+    
         // Write to the file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
             writer.write("Hello this is file writer");
             writer.newLine();
-            writer.write("This is the new sentence");
-            for (String v : veg) {
-                writer.newLine();
-                writer.write(v);
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
